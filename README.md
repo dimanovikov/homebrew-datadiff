@@ -1,12 +1,12 @@
 # homebrew-datadiff
 
-Homebrew tap for [datadiff](https://github.com/cloudroad-io/datadiff) —
+Homebrew tap for [datadiff](https://github.com/dimanovikov/datadiff) —
 semantic diff for structured data files (JSON, YAML, CSV, TOML, XML).
 
 ## Install
 
 ```sh
-brew install cloudroad-io/datadiff/datadiff
+brew install dimanovikov/datadiff/datadiff
 ```
 
 Prebuilt binaries are installed on macOS (Apple Silicon) and Linux
