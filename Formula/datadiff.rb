@@ -1,30 +1,30 @@
 class Datadiff < Formula
   desc "Semantic diff for structured data files (JSON, YAML, CSV, TOML, XML)"
   homepage "https://github.com/dimanovikov/datadiff"
-  version "0.3.1"
+  version "0.3.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.1/datadiff-v0.3.1-aarch64-apple-darwin.tar.gz"
-      sha256 "1e2d380cde829786ca2d5cdeba917e61d63bbf2a176baad36c0042e4cdcf19f0"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.2/datadiff-v0.3.2-aarch64-apple-darwin.tar.gz"
+      sha256 "6a68b9a2720b147049a96412483e925dd3eaf1251588bd5ce4a967dd183ddb0e"
     end
     on_intel do
       # No prebuilt Intel Mac binaries; build from source instead.
-      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.3.1.tar.gz"
-      sha256 "0e5e05f375b313043fcea3a1dff3b2dbed414a46c81c9026ce81619897f4bca9"
+      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.3.2.tar.gz"
+      sha256 "0f015efcd8fd5d6fd4b0302217d32efdf4ea679ebc87559bf2d233716af4e693"
       depends_on "rust" => :build
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.1/datadiff-v0.3.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ee6de152a7b807f8651f2808e91ccfb6d70d328513d82a34036ed55ab1d0e276"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.2/datadiff-v0.3.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b7147b020a383e7e6cb296eee9731fac3fbc1b56ad7d9b96701ba34647385fca"
     end
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.1/datadiff-v0.3.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e2bd808cfd1b6806afebc0e306e2ebdd810899e964c4214a9084dca90e696759"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.2/datadiff-v0.3.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cd3ac27406c8a61c3a64d99f6d75d37955f67f8a6e2adea2ff34b4d279a8e696"
     end
   end
 
