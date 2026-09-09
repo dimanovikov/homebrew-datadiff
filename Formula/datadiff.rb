@@ -7,12 +7,12 @@ class Datadiff < Formula
   on_macos do
     on_arm do
       url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.0/datadiff-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ffc9c1d9aedf998ce9083af86966e2c6670a1f6dd047e97fab6ecdec3621c550"
+      sha256 "27863e6732e57a08b17e38020a0edf8033be158ff424170850a70c68b1c3df87"
     end
     on_intel do
       # No prebuilt Intel Mac binaries; build from source instead.
       url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.4.0.tar.gz"
-      sha256 "4e30ae8b6270c353ac99ba62004ce88ad7da46b392b7d4c3f8841072f624c1f6"
+      sha256 "01c8154b7891ba702cb09d8b2f96191758af554e9254514558f41966cd06ffcb"
       depends_on "rust" => :build
     end
   end
@@ -20,11 +20,11 @@ class Datadiff < Formula
   on_linux do
     on_intel do
       url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.0/datadiff-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e44abca30f9a88c6d3a7feaf2288f8cf3ec0603a12c01d6403177130eb23026a"
+      sha256 "ff3e6edead5a4c14f4e2531c4a8496d90efc1ad96ecf2319ebdbcf8461b87a75"
     end
     on_arm do
       url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.0/datadiff-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "35df96aacc6a986c5ef8cf6180d8c22c5b8abf245f2c59812b855b75cc8cc183"
+      sha256 "1992c2bd0140fcbf7a5ab721e928308ee15b0c88efddf15338b1164e155e5b1d"
     end
   end
 
