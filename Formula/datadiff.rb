@@ -1,30 +1,30 @@
 class Datadiff < Formula
   desc "Semantic diff for structured data files (JSON, YAML, CSV, TOML, XML)"
   homepage "https://github.com/dimanovikov/datadiff"
-  version "0.4.0"
+  version "0.3.2"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.0/datadiff-v0.4.0-aarch64-apple-darwin.tar.gz"
-      sha256 "27863e6732e57a08b17e38020a0edf8033be158ff424170850a70c68b1c3df87"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.2/datadiff-v0.3.2-aarch64-apple-darwin.tar.gz"
+      sha256 "69d985ecc20ec78bf3502b89e5ee4b80d39ff0841277b386daa09d0d890cd3fd"
     end
     on_intel do
       # No prebuilt Intel Mac binaries; build from source instead.
-      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.4.0.tar.gz"
-      sha256 "01c8154b7891ba702cb09d8b2f96191758af554e9254514558f41966cd06ffcb"
+      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.3.2.tar.gz"
+      sha256 "90bbc9135212b594769998ccde2471878196e97e04e87c01a313b36729242c70"
       depends_on "rust" => :build
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.0/datadiff-v0.4.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "ff3e6edead5a4c14f4e2531c4a8496d90efc1ad96ecf2319ebdbcf8461b87a75"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.2/datadiff-v0.3.2-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "3560ae8fc868a8a3d2abfa5a6552d31f5dcbca7b114885d91f48ef556c964c13"
     end
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.0/datadiff-v0.4.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "1992c2bd0140fcbf7a5ab721e928308ee15b0c88efddf15338b1164e155e5b1d"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.2/datadiff-v0.3.2-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "d2448bf6a28678c65c51e20836ac980f57981c351c247bf275bd149a3ee0d3e3"
     end
   end
 
