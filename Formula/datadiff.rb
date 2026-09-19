@@ -1,30 +1,30 @@
 class Datadiff < Formula
   desc "Semantic diff for structured data files (JSON, YAML, CSV, TOML, XML)"
   homepage "https://github.com/dimanovikov/datadiff"
-  version "0.3.2"
+  version "0.4.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.2/datadiff-v0.3.2-aarch64-apple-darwin.tar.gz"
-      sha256 "69d985ecc20ec78bf3502b89e5ee4b80d39ff0841277b386daa09d0d890cd3fd"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.1/datadiff-v0.4.1-aarch64-apple-darwin.tar.gz"
+      sha256 "8397649412811a80c6892586d58ecae77c67ff676da79e08e5ca4b58423956c9"
     end
     on_intel do
       # No prebuilt Intel Mac binaries; build from source instead.
-      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.3.2.tar.gz"
-      sha256 "90bbc9135212b594769998ccde2471878196e97e04e87c01a313b36729242c70"
+      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.4.1.tar.gz"
+      sha256 "0ed60265d5e89fe0c98f9ee345de4813ea3e04fb00edde96ca6593a87ced42fe"
       depends_on "rust" => :build
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.2/datadiff-v0.3.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "3560ae8fc868a8a3d2abfa5a6552d31f5dcbca7b114885d91f48ef556c964c13"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.1/datadiff-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "412bbde445e86f0f211639d6006bddc6a4e3048fb8626b5e1248d6d6759ffce4"
     end
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.3.2/datadiff-v0.3.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d2448bf6a28678c65c51e20836ac980f57981c351c247bf275bd149a3ee0d3e3"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.1/datadiff-v0.4.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "3913718108d521748e66cf89cb1fe8f62c03f5950f086e29b63642c577e9accb"
     end
   end
 
