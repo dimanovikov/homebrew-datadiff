@@ -1,5 +1,5 @@
 class Datadiff < Formula
-  desc "Semantic diff for structured data files (JSON, YAML, CSV, TOML, XML)"
+  desc "Semantic diff for JSON, YAML, CSV, TOML and XML that plugs into git diff"
   homepage "https://github.com/dimanovikov/datadiff"
   version "0.4.1"
   license any_of: ["MIT", "Apache-2.0"]
