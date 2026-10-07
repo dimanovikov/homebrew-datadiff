@@ -1,30 +1,30 @@
 class Datadiff < Formula
   desc "Semantic diff for JSON, YAML, CSV, TOML and XML that plugs into git diff"
   homepage "https://github.com/dimanovikov/datadiff"
-  version "0.4.1"
+  version "0.5.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.1/datadiff-v0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "8397649412811a80c6892586d58ecae77c67ff676da79e08e5ca4b58423956c9"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.0/datadiff-v0.5.0-aarch64-apple-darwin.tar.gz"
+      sha256 "ee83a1319c721ed21c8378fbf19f4437fbb593a5584c4995a86cfbb708c7ae2c"
     end
     on_intel do
       # No prebuilt Intel Mac binaries; build from source instead.
-      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.4.1.tar.gz"
-      sha256 "0ed60265d5e89fe0c98f9ee345de4813ea3e04fb00edde96ca6593a87ced42fe"
+      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.5.0.tar.gz"
+      sha256 "8d58fbb061143673f783abaf52a949b2ed1bbf3d65be687cad8e1d604f360a20"
       depends_on "rust" => :build
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.1/datadiff-v0.4.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "412bbde445e86f0f211639d6006bddc6a4e3048fb8626b5e1248d6d6759ffce4"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.0/datadiff-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "0791cf86a83c36a18f9c699eb806dae20130b06a7a38ac39cac9237b8a99f8d5"
     end
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.4.1/datadiff-v0.4.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "3913718108d521748e66cf89cb1fe8f62c03f5950f086e29b63642c577e9accb"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.0/datadiff-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "f0dcabdd5113dcfaceeebc5585bdea021c85cc38efcf0e982566f512e0af75af"
     end
   end
 
