@@ -1,30 +1,30 @@
 class Datadiff < Formula
   desc "Semantic diff for JSON, YAML, CSV, TOML and XML that plugs into git diff"
   homepage "https://github.com/dimanovikov/datadiff"
-  version "0.5.0"
+  version "0.5.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.0/datadiff-v0.5.0-aarch64-apple-darwin.tar.gz"
-      sha256 "ee83a1319c721ed21c8378fbf19f4437fbb593a5584c4995a86cfbb708c7ae2c"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.1/datadiff-v0.5.1-aarch64-apple-darwin.tar.gz"
+      sha256 "a933bd553b52b91f82dc736bf38e30f57dfa8d66cced9f7e3fbf3440e15e3e87"
     end
     on_intel do
       # No prebuilt Intel Mac binaries; build from source instead.
-      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.5.0.tar.gz"
-      sha256 "8d58fbb061143673f783abaf52a949b2ed1bbf3d65be687cad8e1d604f360a20"
+      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.5.1.tar.gz"
+      sha256 "67282df38de9c0d2e28209f5a30d2ba509ccb0385d8292f6d8030b4b07462f8d"
       depends_on "rust" => :build
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.0/datadiff-v0.5.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0791cf86a83c36a18f9c699eb806dae20130b06a7a38ac39cac9237b8a99f8d5"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.1/datadiff-v0.5.1-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "afce32486076e316ba94b819ebad637c972ef7fc5aad59298670a29bbc5884fa"
     end
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.0/datadiff-v0.5.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "f0dcabdd5113dcfaceeebc5585bdea021c85cc38efcf0e982566f512e0af75af"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.1/datadiff-v0.5.1-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "79c8e6041f038c8d5df6f8ab08d03459eadf24481b360288084c18a867c9e892"
     end
   end
 
