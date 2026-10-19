@@ -1,30 +1,30 @@
 class Datadiff < Formula
   desc "Semantic diff for JSON, YAML, CSV, TOML and XML that plugs into git diff"
   homepage "https://github.com/dimanovikov/datadiff"
-  version "0.5.1"
+  version "0.6.0"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.1/datadiff-v0.5.1-aarch64-apple-darwin.tar.gz"
-      sha256 "a933bd553b52b91f82dc736bf38e30f57dfa8d66cced9f7e3fbf3440e15e3e87"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.6.0/datadiff-v0.6.0-aarch64-apple-darwin.tar.gz"
+      sha256 "4e12066e92609c4ce32479d798f19772bca8fdc40e4c547506834f95a4422e5f"
     end
     on_intel do
       # No prebuilt Intel Mac binaries; build from source instead.
-      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.5.1.tar.gz"
-      sha256 "67282df38de9c0d2e28209f5a30d2ba509ccb0385d8292f6d8030b4b07462f8d"
+      url "https://github.com/dimanovikov/datadiff/archive/refs/tags/v0.6.0.tar.gz"
+      sha256 "353bfcd6867d487a33be0796b4b4c1b069b504d18028094536e0cc0937ec31ce"
       depends_on "rust" => :build
     end
   end
 
   on_linux do
     on_intel do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.1/datadiff-v0.5.1-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "afce32486076e316ba94b819ebad637c972ef7fc5aad59298670a29bbc5884fa"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.6.0/datadiff-v0.6.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "2949db89a8449b9ec1808e2cec3e0e5f273d7a2c19730259516abc0cd3d8aab7"
     end
     on_arm do
-      url "https://github.com/dimanovikov/datadiff/releases/download/v0.5.1/datadiff-v0.5.1-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "79c8e6041f038c8d5df6f8ab08d03459eadf24481b360288084c18a867c9e892"
+      url "https://github.com/dimanovikov/datadiff/releases/download/v0.6.0/datadiff-v0.6.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "270a053074fd1214e15289cda14acbfee7f22e1eb7166e3d9baf5fcf559d6a7c"
     end
   end
 
